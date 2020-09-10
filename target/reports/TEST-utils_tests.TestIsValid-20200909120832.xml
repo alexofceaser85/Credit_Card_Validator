@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="2" file="utils_tests.py" name="utils_tests.TestIsValid-20200909120832" skipped="0" tests="2" time="0.005" timestamp="2020-09-09T12:08:33">
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_minimum" time="0.003" timestamp="2020-09-09T12:08:33">
+		<failure message="True is not false" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 25, in test_card_number_length_one_below_minimum
+    self.assertFalse(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_below_minimum" time="0.002" timestamp="2020-09-09T12:08:33">
+		<failure message="True is not false" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 19, in test_card_number_length_well_below_minimum
+    self.assertFalse(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 676, in assertFalse
+    raise self.failureException(msg)
+AssertionError: True is not false
+]]>		</failure>
+	</testcase>
+</testsuite>

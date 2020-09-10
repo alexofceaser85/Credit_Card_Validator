@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="utils_tests.py" name="utils_tests.TestIsValid-20200909181921" skipped="0" tests="10" time="0.014" timestamp="2020-09-09T18:19:21">
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_empty_string" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_minimum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_between_minimum_and_maximum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_maximum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_minimum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_maximum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_minimum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_above_maximum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_below_minimum" time="0.001" timestamp="2020-09-09T18:19:21"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_maximum" time="0.005" timestamp="2020-09-09T18:19:21">
+		<error message="'NoneType' object has no attribute 'group'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 59, in test_card_number_length_at_maximum
+    is_number_valid = utils.is_valid('1234567890123456789')
+  File "/home/student/Documents/cs3280project1/src/main/python/utils.py", line 27, in is_valid
+    print(mo.group())
+AttributeError: 'NoneType' object has no attribute 'group'
+]]>		</error>
+	</testcase>
+</testsuite>

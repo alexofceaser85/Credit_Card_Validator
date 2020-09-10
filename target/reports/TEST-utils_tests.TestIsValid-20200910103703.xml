@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="4" file="utils_tests.py" name="utils_tests.TestIsValid-20200910103703" skipped="0" tests="10" time="0.017" timestamp="2020-09-10T10:37:04">
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_empty_string" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_between_minimum_and_maximum" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_maximum" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_minimum" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_above_maximum" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_below_minimum" time="0.001" timestamp="2020-09-10T10:37:04"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_maximum" time="0.003" timestamp="2020-09-10T10:37:04">
+		<failure message="False is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 61, in test_card_number_length_at_maximum
+    self.assertTrue(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_minimum" time="0.002" timestamp="2020-09-10T10:37:04">
+		<failure message="False is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 37, in test_card_number_length_at_minimum
+    self.assertTrue(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_minimum" time="0.003" timestamp="2020-09-10T10:37:04">
+		<failure message="False is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 43, in test_card_number_length_one_above_minimum
+    self.assertTrue(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_maximum" time="0.002" timestamp="2020-09-10T10:37:04">
+		<failure message="False is not true" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 55, in test_card_number_length_one_below_maximum
+    self.assertTrue(is_number_valid)
+  File "/usr/lib/python3.6/unittest/case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+]]>		</failure>
+	</testcase>
+</testsuite>

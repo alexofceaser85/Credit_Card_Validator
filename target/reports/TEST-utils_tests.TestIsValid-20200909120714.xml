@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="2" failures="0" file="utils_tests.py" name="utils_tests.TestIsValid-20200909120714" skipped="0" tests="2" time="0.006" timestamp="2020-09-09T12:07:14">
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_minimum" time="0.004" timestamp="2020-09-09T12:07:14">
+		<error message="object of type 'int' has no len()" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 23, in test_card_number_length_one_below_minimum
+    is_number_valid = utils.is_valid(123456789012)
+  File "/home/student/Documents/cs3280project1/src/main/python/utils.py", line 21, in is_valid
+    if (len(sequence) <= minimum_card_length & len(sequence) >= maximum_card_length):
+TypeError: object of type 'int' has no len()
+]]>		</error>
+	</testcase>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_below_minimum" time="0.003" timestamp="2020-09-09T12:07:14">
+		<error message="object of type 'int' has no len()" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 17, in test_card_number_length_well_below_minimum
+    is_number_valid = utils.is_valid(123)
+  File "/home/student/Documents/cs3280project1/src/main/python/utils.py", line 21, in is_valid
+    if (len(sequence) <= minimum_card_length & len(sequence) >= maximum_card_length):
+TypeError: object of type 'int' has no len()
+]]>		</error>
+	</testcase>
+</testsuite>
