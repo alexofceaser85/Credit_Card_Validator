@@ -42,5 +42,3 @@ def is_valid(sequence):
 """
 def luhn_verified(credit_card_number):
 """
-
-is_valid('dd')

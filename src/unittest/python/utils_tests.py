@@ -72,3 +72,39 @@ class TestIsValid(unittest.TestCase):
 
         self.assertFalse(is_number_valid)
 
+    def test_card_number_only_letters(self):
+
+        is_number_valid = utils.is_valid('not valid')
+
+        self.assertFalse(is_number_valid)
+
+    def test_card_number_letters_and_numbers(self):
+
+        is_number_valid = utils.is_valid('78d68794d6g4545d')
+
+        self.assertFalse(is_number_valid)
+
+    def test_wrongly_grouped_card_number_by_space(self):
+
+        is_number_valid = utils.is_valid('78 98 98 78 98 45 89 45')
+
+        self.assertFalse(is_number_valid)
+
+    def test_correctly_grouped_card_number_by_space(self):
+
+        is_number_valid = utils.is_valid('7894 7894 5678 5478')
+
+        self.assertTrue(is_number_valid)
+
+    def test_wrongly_grouped_card_number_by_dash(self):
+
+        is_number_valid = utils.is_valid('87-78-78-45-78-89-45-56')
+
+        self.assertFalse(is_number_valid)
+
+    def test_correctly_grouped_card_number_by_dash(self):
+
+        is_number_valid = utils.is_valid('7845-7889-4556-7854')
+
+        self.assertTrue(is_number_valid)
+
