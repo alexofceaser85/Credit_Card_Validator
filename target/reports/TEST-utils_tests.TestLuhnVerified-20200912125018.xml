@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912125018" skipped="0" tests="15" time="0.021" timestamp="2020-09-12T12:50:19">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_between_minimum_and_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_grouped_by_dashes" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_grouped_by_spaces" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_above_minimum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_below_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_between_minimum_and_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_grouped_by_dashes" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_grouped_by_spaces" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_above_minimum" time="0.004" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_below_maximum" time="0.001" timestamp="2020-09-12T12:50:19"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_card_number_with_letters" time="0.003" timestamp="2020-09-12T12:50:19">
+		<error message="invalid literal for int() with base 10: 'd'" type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 199, in test_card_number_with_letters
+    is_luhn_verified = utils.luhn_verified('not valid')
+  File "/home/student/Documents/cs3280project1/src/main/python/utils.py", line 46, in luhn_verified
+    last_card_digit = int(credit_card_digits[(len(credit_card_digits) - 1):len(credit_card_digits)])
+ValueError: invalid literal for int() with base 10: 'd'
+]]>		</error>
+	</testcase>
+</testsuite>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="11" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912121435" skipped="0" tests="11" time="0.048" timestamp="2020-09-12T12:14:36">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_maximum" time="0.004" timestamp="2020-09-12T12:14:35">
+		<failure message="'Fake' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 171, in test_luhn_invalid_card_number_at_maximum
+    self.assertEquals('Fake', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Fake' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_minimum" time="0.007" timestamp="2020-09-12T12:14:35">
+		<failure message="'Fake' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 123, in test_luhn_invalid_card_number_at_minimum
+    self.assertEquals('Fake', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Fake' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_between_minimum_and_maximum" time="0.010" timestamp="2020-09-12T12:14:35">
+		<failure message="'Fake' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 147, in test_luhn_invalid_card_number_between_minimum_and_maximum
+    self.assertEquals('Fake', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Fake' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_above_minimum" time="0.003" timestamp="2020-09-12T12:14:35">
+		<failure message="'Fake' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 135, in test_luhn_invalid_card_number_one_above_minimum
+    self.assertEquals('Fake', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Fake' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_below_maximum" time="0.003" timestamp="2020-09-12T12:14:35">
+		<failure message="'Fake' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 159, in test_luhn_invalid_card_number_one_below_maximum
+    self.assertEquals('Fake', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Fake' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_maximum" time="0.004" timestamp="2020-09-12T12:14:35">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 165, in test_luhn_valid_card_number_at_maximum
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_minimum" time="0.003" timestamp="2020-09-12T12:14:35">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 117, in test_luhn_valid_card_number_at_minimum
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_between_minimum_and_maximum" time="0.003" timestamp="2020-09-12T12:14:36">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 141, in test_luhn_valid_card_number_between_minimum_and_maximum
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_grouped_by_spaces" time="0.006" timestamp="2020-09-12T12:14:36">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 177, in test_luhn_valid_card_number_grouped_by_spaces
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_above_minimum" time="0.003" timestamp="2020-09-12T12:14:36">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 129, in test_luhn_valid_card_number_one_above_minimum
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_below_maximum" time="0.003" timestamp="2020-09-12T12:14:36">
+		<failure message="'Authentic' != None" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 153, in test_luhn_valid_card_number_one_below_maximum
+    self.assertEquals('Authentic', is_luhn_verified)
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 'Authentic' != None
+]]>		</failure>
+	</testcase>
+</testsuite>

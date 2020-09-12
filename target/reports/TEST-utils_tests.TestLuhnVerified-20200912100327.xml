@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912100327" skipped="0" tests="1" time="0.004" timestamp="2020-09-12T10:03:27">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_valid_input_at_minimum" time="0.004" timestamp="2020-09-12T10:03:27">
+		<failure message="None != 'Authentic'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 117, in test_valid_input_at_minimum
+    self.assertEquals(is_luhn_verified, 'Authentic')
+  File "/usr/lib/python3.6/unittest/case.py", line 1321, in deprecated_func
+    return original_func(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/usr/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != 'Authentic'
+]]>		</failure>
+	</testcase>
+</testsuite>

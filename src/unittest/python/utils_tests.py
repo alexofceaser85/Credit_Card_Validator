@@ -108,3 +108,88 @@ class TestIsValid(unittest.TestCase):
 
         self.assertTrue(is_number_valid)
 
+class TestLuhnVerified(unittest.TestCase):
+
+    def test_luhn_valid_card_number_at_minimum(self):
+
+        is_luhn_verified = utils.luhn_verified('5038186303744')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_at_minimum(self):
+
+        is_luhn_verified = utils.luhn_verified('5038186303745')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_one_above_minimum(self):
+
+        is_luhn_verified = utils.luhn_verified('50381863037456')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_one_above_minimum(self):
+
+        is_luhn_verified = utils.luhn_verified('50381863037455')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_between_minimum_and_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('1234567890123452')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_between_minimum_and_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('1234567890123456')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_one_below_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('123456789012345671')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_one_below_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('123456789012345678')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_at_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('1234567890123456785')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_at_maximum(self):
+
+        is_luhn_verified = utils.luhn_verified('1234567890123456789')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_grouped_by_spaces(self):
+    
+        is_luhn_verified = utils.luhn_verified('1234 5678 9012 3452')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_grouped_by_spaces(self):
+
+        is_luhn_verified = utils.luhn_verified('1234 5678 9012 3455')
+
+        self.assertEquals('Fake', is_luhn_verified)
+
+    def test_luhn_valid_card_number_grouped_by_dashes(self):
+
+        is_luhn_verified = utils.luhn_verified('1234-5678-9012-3452')
+
+        self.assertEquals('Authentic', is_luhn_verified)
+
+    def test_luhn_invalid_card_number_grouped_by_dashes(self):
+
+        is_luhn_verified = utils.luhn_verified('1234-5678-9012-3455')
+
+        self.assertEquals('Fake', is_luhn_verified)

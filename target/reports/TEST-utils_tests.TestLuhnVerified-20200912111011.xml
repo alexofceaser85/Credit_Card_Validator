@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912111011" skipped="0" tests="10" time="0.014" timestamp="2020-09-12T11:10:12">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_maximum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_between_minimum_and_maximum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_above_minimum" time="0.002" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_below_maximum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_maximum" time="0.002" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_between_minimum_and_maximum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_above_minimum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_below_maximum" time="0.001" timestamp="2020-09-12T11:10:12"/>
+</testsuite>

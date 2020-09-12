@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912100510" skipped="0" tests="1" time="0.001" timestamp="2020-09-12T10:05:11">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_valid_input_at_minimum" time="0.001" timestamp="2020-09-12T10:05:11"/>
+</testsuite>

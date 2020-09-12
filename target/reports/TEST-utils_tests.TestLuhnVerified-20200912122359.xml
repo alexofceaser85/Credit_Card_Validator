@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="utils_tests.py" name="utils_tests.TestLuhnVerified-20200912122359" skipped="0" tests="11" time="0.030" timestamp="2020-09-12T12:24:00">
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_maximum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_between_minimum_and_maximum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_above_minimum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_invalid_card_number_one_below_maximum" time="0.006" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_maximum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_at_minimum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_between_minimum_and_maximum" time="0.002" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_above_minimum" time="0.007" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_one_below_maximum" time="0.001" timestamp="2020-09-12T12:24:00"/>
+	<testcase classname="utils_tests.TestLuhnVerified" name="test_luhn_valid_card_number_grouped_by_spaces" time="0.006" timestamp="2020-09-12T12:24:00">
+		<error message="invalid literal for int() with base 10: ' '" type="ValueError">
+<![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/home/student/Documents/cs3280project1/src/unittest/python/utils_tests.py", line 175, in test_luhn_valid_card_number_grouped_by_spaces
+    is_luhn_verified = utils.luhn_verified('1234 5678 9012 3452')
+  File "/home/student/Documents/cs3280project1/src/main/python/utils.py", line 57, in luhn_verified
+    total_checksum += int(reverse_card_number[index])
+ValueError: invalid literal for int() with base 10: ' '
+]]>		</error>
+	</testcase>
+</testsuite>

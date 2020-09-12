@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="utils_tests.py" name="utils_tests.TestIsValid-20200912121435" skipped="0" tests="16" time="0.017" timestamp="2020-09-12T12:14:35">
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_empty_string" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_maximum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_at_minimum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_between_minimum_and_maximum" time="0.002" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_maximum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_above_minimum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_maximum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_one_below_minimum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_above_maximum" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_length_well_below_minimum" time="0.002" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_letters_and_numbers" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_card_number_only_letters" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_correctly_grouped_card_number_by_dash" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_correctly_grouped_card_number_by_space" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_wrongly_grouped_card_number_by_dash" time="0.001" timestamp="2020-09-12T12:14:35"/>
+	<testcase classname="utils_tests.TestIsValid" name="test_wrongly_grouped_card_number_by_space" time="0.001" timestamp="2020-09-12T12:14:35"/>
+</testsuite>
