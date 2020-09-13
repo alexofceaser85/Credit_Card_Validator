@@ -12,6 +12,8 @@ __version__ = "07-September-2020"
 MINIMUM_CARD_LENGTH = 13
 FOUR_DIGIT_SUBGROUP_CARD_LENGTH = 16
 MAXIMUM_CARD_LENGTH = 19
+MAX_LUHN_ALGORITHM_DIGIT = 9
+MULTIPLE_OF_TEN = 10
 
 def is_valid(sequence):
     """
@@ -37,7 +39,7 @@ def is_valid(sequence):
 
     return False
 
-def is_luhn_verified(credit_card_number):
+def luhn_verified(credit_card_number):
     """
     This function uses the luhn algorithm to determine if a given credit card number is a fake or
     an authentic card number
@@ -56,14 +58,14 @@ def is_luhn_verified(credit_card_number):
         if index % 2 != 0:
             total_checksum += int(reverse_card_number[index])
         else:
-            if (int(reverse_card_number[index]) * 2) > 9:
-                total_checksum += (int(reverse_card_number[index]) * 2 - 9)
+            if (int(reverse_card_number[index]) * 2) > MAX_LUHN_ALGORITHM_DIGIT:
+                total_checksum += (int(reverse_card_number[index]) * 2 - MAX_LUHN_ALGORITHM_DIGIT)
             else:
                 total_checksum += int(reverse_card_number[index]) * 2
 
         index += 1
 
-    if (int(total_checksum + last_card_digit)) % 10 == 0:
+    if (int(total_checksum + last_card_digit)) % MULTIPLE_OF_TEN == 0:
         return 'Authentic'
 
     return 'Fake'

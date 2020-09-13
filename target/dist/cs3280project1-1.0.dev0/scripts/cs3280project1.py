@@ -10,7 +10,6 @@ import sys
 import re
 from pathlib import Path
 sys.path.append('../python')
-print(sys.path)
 import utils
 
 __author__ = "Alex DeCesare"
@@ -24,7 +23,7 @@ def main():
     This is the main method of the program, calls the methods to determine if a card is the correct
     format, the card issuer, and if the card is authentic
     """
-    print('Please enter a credit card number')
+    print("Please enter a credit card number")
     credit_card_number = input()
 
     output_credit_card_number = "Invalid"
@@ -40,7 +39,7 @@ def main():
         found_credit_card = find_matching_start_digits(equal_card_length, credit_card_digits)
 
         output_credit_card_number = credit_card_number
-        output_luhn_verification = utils.is_luhn_verified(credit_card_number)
+        output_luhn_verification = utils.luhn_verified(credit_card_number)
 
         if found_credit_card is not None:
             output_credit_card_type = found_credit_card['card_issuer']
