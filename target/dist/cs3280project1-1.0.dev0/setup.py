@@ -42,12 +42,9 @@ if __name__ == '__main__':
         project_urls = {},
 
         scripts = ['scripts/cs3280project1.py'],
-        packages = ['.'],
+        packages = [],
         namespace_packages = [],
-        py_modules = [
-            '__init__',
-            'utils'
-        ],
+        py_modules = ['utils'],
         entry_points = {},
         data_files = [],
         package_data = {},
