@@ -48,6 +48,17 @@
       "module": "utils",
       "sum_lines": 37,
       "sum_lines_not_covered": 0
+    },
+    {
+      "branches": 0,
+      "branches_missing": 0,
+      "branches_partial": 0,
+      "coverage": 100,
+      "lines": [],
+      "lines_not_covered": [],
+      "module": "__init__",
+      "sum_lines": 0,
+      "sum_lines_not_covered": 0
     }
   ],
   "overall_branch_coverage": 100.0,
