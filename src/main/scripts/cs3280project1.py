@@ -24,6 +24,7 @@ def main():
     credit_card_number = input()
 
     parse_credit_card_file()
+    equal_card_length = find_matching_card_length(credit_card_number)
 
 def parse_credit_card_file():
 
@@ -45,6 +46,18 @@ def parse_credit_card_file():
                 }
 
         credit_card_list.append(credit_card)
+
+def find_matching_card_length(credit_card_number):
+
+    matching_cards = []
+
+    for current_card in credit_card_list:
+
+        for current_card_length in current_card['card_length']:
+
+            if int(current_card_length) == len(credit_card_number):
+
+                matching_cards.append(current_card)
 
 def remove_new_line_tag(card_start_digits):
     
