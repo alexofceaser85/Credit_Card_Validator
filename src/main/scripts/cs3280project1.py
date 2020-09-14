@@ -5,17 +5,15 @@ This is the main class for the program, it accepts a location for a file contain
 and determines if the card is of the correct format, the card issuer, and if the card is authentic
 """
 
-
 import sys
 import re
-from pathlib import Path
-sys.path.append('../python')
+import pathlib
 import utils
 
 __author__ = "Alex DeCesare"
 __version__ = "12-September-2020"
 
-FILE_LOCATION = Path(sys.argv[1])
+FILE_LOCATION = pathlib.Path(sys.argv[1])
 CREDIT_CARD_LIST = []
 
 def main():
